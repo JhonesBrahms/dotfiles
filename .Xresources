@@ -1,0 +1,13 @@
+URxvt.font:			xft:Hack:pixelsize=12:antialias=true:hinting=true
+URxvt.boldFont:		xft:Hack:bold:pixelsize=12:antialias=true:hinting=true
+URxvt.scrollBar:	false
+URxvt.background:	#0A2B15
+URxvt.foreground:	#B7C8BD
+URxvt.saveLines:	65535
+
+!urxvt*depth: 32
+!urxvt*background: rgba:0000/0000/0200/c800
+
+Xft*dpi:       96
+Xft*antialias: True
+Xft*hinting:   Full
