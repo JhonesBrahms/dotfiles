@@ -32,8 +32,8 @@ exec --no-startup-id nm-applet
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && $refresh_i3status
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% && $refresh_i3status
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
@@ -47,7 +47,7 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id dmenu_run
+bindsym $mod+d exec --no-startup-id dmenu_run -b -fn 'Hack-8' -nb $bg-color -nf $fg-color 
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
@@ -176,30 +176,43 @@ mode "resize" {
 ###### Keybindings ######
 
 # Sreen brightness controls
-bindsym XF86MonBrightnessUp exec brightnessctl s +15 # increase screen brightness
-bindsym XF86MonBrightnessDown exec brightnessctl s 15- # decrease screen brightness
+bindsym XF86MonBrightnessUp exec brightnessctl s +5 # increase screen brightness
+bindsym XF86MonBrightnessDown exec brightnessctl s 5- # decrease screen brightness
 
 # Touchpad controls
 bindsym XF86TouchpadToggle exec $HOME/.config/i3/toggletouchpad.sh # toggle touchpad
 
+# Screen Record
+bindsym $mod+Shift+x exec kazam
+
+# ScreenShot
+bindsym $mod+x exec flameshot gui
+
 ###### Startup ######
 
+exec urxvt
+exec firefox
+exec discord
 exec picom
 exec_always $HOME/.config/polybar/launch.sh
 exec --no-startup-id nitrogen --restore
 exec_always autotiling
+exec_always sudo systemctl restart tor
 
 ###### Appearance ######
 
 hide_edge_borders both
 default_border pixel 0
-gaps inner 9
-gaps outer 1
+gaps inner 10
+
+###### Colors ######
+set $bg-color '#0a2b15'
+set $fg-color '#b7c8bd'
 
 ###### Assignment to Workspaces ######
 
 # Workspace 1
-assign [class="Xfce4-terminal"] $ws1
+assign [class="URxvt"] $ws1
 
 # Workspace 2
 assign [class="firefox"] $ws2
