@@ -1,12 +1,24 @@
-URxvt.font: xft:Hack:pixelsize=12:antialias=true:hinting=true
-URxvt.boldFont: xft:Hack:bold:pixelsize=12:antialias=true:hinting=true
-URxvt.scrollBar:  false
-URxvt.foreground: #B7C8BD
-URxvt.saveLines:  65535
+!!!!!! Civilize The Mind
 
-urxvt*depth: 32
+urxvt*font:	xft:Terminus:bold:pixelsize=14:antialias=true:hinting=true
+urxvt*boldFont:	xft:Terminus:bold:italic:pixelsize=14:antialias=true:hinting=true
+urxvt*scrollBar:	false
+urxvt*foreground:	#B7C8BD
+urxvt*saveLines:	10000
+urxvt*letterSpace:	1 
+urxvt*lineSpace:	1
+
+Xft*dpi:       96
+Xft*antialias: True
+Xft*hinting:   Full
+
+urxvt*geometry: 90x25
 urxvt*background: rgba:0000/0000/0200/c800
-
-Xft*dpi:  96
-Xft*antialias:  True
-Xft*hinting:  Full
+urxvt*cursorColor:  #2ECC54
+urxvt*cursorBlink:   true
+urxvt*pointerColor: #00ff00
+urxvt*boldMode:      true
+urxvt*colorMode:     true
+urxvt*colorBDMode:   true
+urxvt*colorULMode:   true
+urxvt*underLine:     true
