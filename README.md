@@ -1,3 +1,3 @@
 # My OS essentials config files
 
-Packages used for 'rice': i3 dmenu polybar picom hack-font
+Packages used for 'rice' i3: picom hack-font bumblebee-status
