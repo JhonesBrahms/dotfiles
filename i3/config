@@ -167,9 +167,6 @@ bindsym $mod+Shift+x exec flameshot full -p Images/ScreenShots
 # Autotiling
 exec_always autotiling
 
-# Discord 
-exec discord
-
 # Firefox
 exec firefox
 
@@ -181,24 +178,23 @@ exec --no-startup-id nitrogen --restore
 # Workspace 1 - Browsers
 assign [class="firefox"] $ws1 
 
-# Workspace 2 - Editor & IDEs
-assign [class="code-oss"] $ws2
-
-# Workspace 3 - Archive manager
+# Workspace 2 - Archive Manager
 assign [class="Thunar"] $ws3
 
-# Workspace 4 - Pentools
+# Workspace 3 - Coding
+assign [class="code-oss"] $ws2
+
+# Workspace 4 - Tools
 assign [class="burp-StartBurp"] $ws4
 assign [class="OWASP ZAP"] $ws4
+assign [class="Postman"] $ws4
 
 # Workspace 5
 
 # Workspace 6
 
 # Workspace 7 - Medias
-assign [class="Stremio"] $ws7
 assign [class="vlc"] $ws7
-assign [class="Gthumb"] $ws7
 
 # Workspace 8
 
