@@ -179,10 +179,10 @@ exec --no-startup-id nitrogen --restore
 assign [class="firefox"] $ws1 
 
 # Workspace 2 - Archive Manager
-assign [class="Thunar"] $ws3
+assign [class="Thunar"] $ws2
 
 # Workspace 3 - Coding
-assign [class="code-oss"] $ws2
+assign [class="Code - Insiders"] $ws3
 
 # Workspace 4 - Tools
 assign [class="burp-StartBurp"] $ws4
