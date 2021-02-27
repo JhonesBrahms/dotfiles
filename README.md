@@ -9,11 +9,11 @@ Just another system config/backup repo.
 
 # Dependencies
 
-- Window Manager & Desktop Environment [i3] (https://i3wm.org/)
-- Terminal Emulator [rxvt-unicode] (http://software.schmorp.de/pkg/rxvt-unicode.html)
-- Taskbar [Polybar] (https://github.com/polybar/polybar)
-- Compositor [Picom] (https://github.com/yshui/picom)
-- Icons [Awesome] (https://fontawesome.com/)
-- Image Viewer [FEH] (https://feh.finalrewind.org/)
-- Screenshot [Flameshot] (https://github.com/flameshot-org/flameshot)
-- Text Editor [Visual Studio Code] (https://code.visualstudio.com/)
+- Window Manager & Desktop Environment [i3](https://i3wm.org/)
+- Terminal Emulator [rxvt-unicode](http://software.schmorp.de/pkg/rxvt-unicode.html)
+- Taskbar [Polybar](https://github.com/polybar/polybar)
+- Compositor [Picom](https://github.com/yshui/picom)
+- Icons [Awesome](https://fontawesome.com/)
+- Image Viewer [FEH](https://feh.finalrewind.org/)
+- Screenshot [Flameshot](https://github.com/flameshot-org/flameshot)
+- Text Editor [Visual Studio Code](https://code.visualstudio.com/)
