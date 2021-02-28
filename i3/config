@@ -1,4 +1,4 @@
-####### Civilize The Mind 
+######## Civilize The Mind 
 
 set $mod Mod4
 
@@ -166,9 +166,6 @@ bindsym $mod+Shift+x exec flameshot full -p Images/ScreenShots
 
 # Keyboard Layout
 exec setxkbmap br
-
-# Autotiling
-exec_always autotiling
 
 # Wallpaper
 exec feh --bg-fill $HOME/Images/Wallpapers/Myths\ \&\ Fictions/1613283469443.jpg
