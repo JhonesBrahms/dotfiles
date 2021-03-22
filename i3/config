@@ -1,4 +1,4 @@
-######## Civilize The Mind 
+####### Civilize The Mind 
 
 set $mod Mod4
 
@@ -168,7 +168,7 @@ bindsym $mod+Shift+x exec flameshot full -p Images/ScreenShots
 exec setxkbmap br
 
 # Wallpaper
-exec feh --bg-fill $HOME/Images/Wallpapers/Myths\ \&\ Fictions/1613283469443.jpg
+exec feh --bg-fill $HOME/Pictures/Wallpapers/Fantasy/1611984237927.jpg 
 
 # Polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
