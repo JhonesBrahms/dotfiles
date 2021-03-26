@@ -1,12 +1,12 @@
 ###### Civilize The Mind
 
 [colors]
-background = #b357462b
-background-alt = #4d867147
-foreground = #302813
-foreground-alt = #cfd5e7
-primary = #715b35
-secondary = #887c66
+background = #bf6c1b0c
+background-alt = #cd470a
+foreground = #f8c64d
+foreground-alt = #0e070d
+primary = #6c1b0c
+secondary = #f8c64d
 alert = #bd2c40
 
 [bar/mybar]
@@ -53,16 +53,16 @@ label-mode-background = ${colors.primary}
 ; focused = Active workspace on focused monitor
 label-focused = %index%
 label-focused-background = ${colors.primary}
-label-focused-underline= ${colors.foreground-alt}
+label-focused-underline= ${colors.background-alt}
 label-focused-padding = 2
-label-focused-foreground = ${colors.foreground-alt}
+label-focused-foreground = ${colors.foreground}
 
 ; unfocused = Inactive workspace on any monitor
 label-unfocused = %index%
 label-unfocused-padding = 2
 label-unfocused-background = ${colors.background-alt}
 label-unfocused-underline = ${colors.secondary}
-label-unfocused-foreground = ${colors.foreground}
+label-unfocused-foreground = ${colors.foreground-alt}
 
 ; visible = Active workspace on unfocused monitor
 label-visible = %index%
@@ -83,16 +83,16 @@ label-urgent-padding = 2
 type = internal/cpu
 interval = 2
 format-prefix = "  "
-format-prefix-foreground = #02305b
-format-underline = ${colors.primary}
+format-prefix-foreground = #9999e1
+format-underline = ${colors.background-alt}
 label = %percentage:2%%
 
 [module/memory]
 type = internal/memory
 interval = 2
 format-prefix = "   "
-format-prefix-foreground = #08432d
-format-underline = ${colors.primary}
+format-prefix-foreground = #7fbf7f
+format-underline = ${colors.background-alt}
 label = %percentage_used%%
 
 [module/date]
@@ -103,7 +103,7 @@ date = " %d-%m"
 time = "  %H:%M"
 
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = ${colors.primary}
+format-underline = ${colors.background-alt}
 
 label = %time% %date%
 
