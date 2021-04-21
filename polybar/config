@@ -1,12 +1,12 @@
 ###### Civilize The Mind
 
 [colors]
-background = #bf6c1b0c
-background-alt = #cd470a
-foreground = #f8c64d
-foreground-alt = #0e070d
-primary = #6c1b0c
-secondary = #f8c64d
+background = #bf8c9eba
+background-alt = #d1e9f3
+foreground = #1c181a
+foreground-alt = #31323a
+primary = #cea568
+secondary = #4a4b54
 alert = #bd2c40
 
 [bar/mybar]
