@@ -168,7 +168,7 @@ bindsym $mod+Shift+x exec flameshot full -p Pictures/ScreenShots
 exec setxkbmap br
 
 # Wallpaper
-exec feh --bg-fill $HOME/Pictures/Wallpapers/Fantasy/1615431207165.jpg
+exec feh --bg-fill $HOME/Pictures/Wallpapers/Masks/wallhaven-j5prew.jpg
 
 # Discord
 exec discord
@@ -176,26 +176,30 @@ exec discord
 # Polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
+# Autotiling
+exec_always autotiling
 
 ###### Workspaces Assignment ######
 
-# Workspace 1 - Browsers
-assign [class="firefox"] $ws1 
+# Workspace 1 - Terminal
+assign [class="URxvt"] $ws1
 
-# Workspace 2 - Archive Manager
-assign [class="Thunar"] $ws2
+# Workspace 2 - Browser
+assign [class="firefox"] $ws2
 
-# Workspace 3 - Text Editor
-assign [class="Code"] $ws3
+# Workspace 3 - File Manager
+assign [class="Thunar"] $ws3
 
-# Workspace 4
+# Workspace 4 - Text Editor
+assign [class="Code"] $ws4
 
 # Workspace 5
 
 # Workspace 6
 
 # Workspace 7 - Multimedia
-assign [class="vlc"] $ws7
+assign [class="Parole Media Player"] $ws7
+
 
 # Workspace 8
 
@@ -208,19 +212,19 @@ assign [class="Steam"] $ws10
 ###### Appearance ######
 
 # i3-gaps
-for_window [class=".*"] border pixel 0
-for_window [class="URxvt"] floating enable
-for_window [class="URxvt"] border pixel 2
-#gaps inner 8
-#gaps outer 1
+for_window [class=".*"] border pixel 1
+#for_window [class="URxvt"] floating enable
+#for_window [class="URxvt"] border pixel 2
+gaps inner 8
+gaps outer 1
 
 # Effects
 exec_always picom --config $HOME/.config/picom.conf #Picomptom config file
 
 # Colors schemes
-set $bg-color-0 #cd470a
-set $bg-color-1 #867147
-set $text-color #0e070d
+set $bg-color-0 #d1e9f3
+set $bg-color-1 #6e7180
+set $text-color #31323a
 set $inactive-bg-color  #26210d
 set $inactive-text-color #cdd4e6
 set $urgent-bg-color #ffffff
