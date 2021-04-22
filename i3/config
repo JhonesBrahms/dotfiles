@@ -164,14 +164,8 @@ bindsym $mod+Shift+x exec flameshot full -p Pictures/ScreenShots
 
 ###### Startup ######
 
-# Keyboard Layout
-exec setxkbmap br
-
 # Wallpaper
 exec feh --bg-fill $HOME/Pictures/Wallpapers/Masks/wallhaven-j5prew.jpg
-
-# Discord
-exec discord
 
 # Polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
@@ -193,12 +187,16 @@ assign [class="Thunar"] $ws3
 # Workspace 4 - Text Editor
 assign [class="Code"] $ws4
 
-# Workspace 5
+# Workspace 5 - Dev & Design
+assign [class="Godot"] $ws5
+assign [class="Gimp"] $ws5
+assign [class="Blender"] $ws5
+assign [class="UnityHub"] $ws5
 
 # Workspace 6
 
 # Workspace 7 - Multimedia
-assign [class="Parole Media Player"] $ws7
+assign [class="Parole"] $ws7
 
 
 # Workspace 8
