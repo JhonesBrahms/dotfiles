@@ -9,11 +9,16 @@ Just another system config/backup repo.
 
 # Dependencies
 
+- Operating System [Arch Linux](https://archlinux.org)
 - Window Manager & Desktop Environment [i3](https://i3wm.org/)
+- Display Manager [SDDM](https://github.com/sddm/sddm)
+- File Manager [Thunar](https://docs.xfce.org/xfce/thunar/start)
 - Terminal Emulator [rxvt-unicode](http://software.schmorp.de/pkg/rxvt-unicode.html)
+- System Information [neofetch](https://github.com/dylanaraps/neofetch)
 - Taskbar [Polybar](https://github.com/polybar/polybar)
 - Compositor [Picom](https://github.com/yshui/picom)
 - Icons [Awesome](https://fontawesome.com/)
-- Image Viewer [FEH](https://feh.finalrewind.org/)
+- Image Viewer [Nomacs](https://nomacs.org/)
 - Screenshot [Flameshot](https://github.com/flameshot-org/flameshot)
-- Text Editor [Visual Studio Code](https://code.visualstudio.com/)
+- Text Editor [Vim](https://www.vim.org)
+- Text Editor (for *code* purpose) [Visual Studio Code](https://code.visualstudio.com/)
