@@ -162,7 +162,13 @@ bindsym XF86MonBrightnessDown exec brightnessctl s 5- # decrease screen brightne
 bindsym $mod+x exec flameshot gui
 bindsym $mod+Shift+x exec flameshot full -p Pictures/ScreenShots
 
-###### Startup ######
+###### Startup #####
+
+#Keuboard Layout
+exec setxkbmap br
+
+# Audio Output
+exec pasystray
 
 # Wallpaper
 exec --no-startup-id nitrogen --restore 
@@ -175,17 +181,13 @@ exec_always autotiling
 
 ###### Workspaces Assignment ######
 
-# Workspace 1 - Terminal
-assign [class="URxvt"] $ws1
+# Workspace 1 
 
-# Workspace 2 - Browser
-assign [class="firefox"] $ws2
+# Workspace 2
 
-# Workspace 3 - File Manager
-assign [class="Thunar"] $ws3
+# Workspace 3
 
-# Workspace 4 - Text Editor
-assign [class="Code"] $ws4
+# Workspace 4
 
 # Workspace 5
 
@@ -193,7 +195,9 @@ assign [class="Code"] $ws4
 
 # Workspace 7
 
-# Workspace 8
+# Workspace 8 - Multimedia
+assign [class="Stremio"] $ws8
+assign [class="Parole"] $ws8
 
 # Workspace 9 - Voip
 assign [class="discord"] $ws9
@@ -205,8 +209,8 @@ assign [class="Steam"] $ws10
 
 # i3-gaps
 for_window [class=".*"] border pixel 0
-#for_window [class="URxvt"] floating enable
-#for_window [class="URxvt"] border pixel 2
+for_window [class="URxvt"] floating enable
+for_window [class="URxvt"] border pixel 1 
 #gaps inner 8
 #gaps outer 1
 
